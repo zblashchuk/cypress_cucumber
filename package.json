@@ -1,0 +1,35 @@
+{
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@faker-js/faker": "^7.5.0",
+    "cypress": "^10.9.0",
+    "cypress-xpath": "^2.0.1",
+    "esbuild": "^0.15.10",
+    "multiple-cucumber-html-reporter": "^3.0.1"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "cypress-real-events": "^1.7.1",
+    "prettier": "^2.7.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true
+    },
+    "nonGlobalStepDefinitions": true
+  },
+  "name": "cypress-cucamber",
+  "version": "1.0.0",
+  "description": "cypres plus cucumber",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:tests": "cypress run",
+    "cypress:report": "node cucumber-html-report.js",
+    "cy:test2": "npx cypress run --config-file ./cypress2.config.js --browser chrome && node ./cucumber-html-report.js",
+    "cy:test2head": "npx cypress run --config-file ./cypress2.config.js --browser chrome --headed && node ./cucumber-html-report.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zoryana",
+  "license": "ISC"
+}

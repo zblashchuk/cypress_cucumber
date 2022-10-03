@@ -1,0 +1,24 @@
+name: Cypress tests
+on: [push]
+jobs:
+  cypress-run:
+    name: Cypress run
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: install dependencies
+        run: npm i
+      - name: Cypress run
+        uses: cypress-io/github-action@v4
+        #with:
+          #spec: cypress/integration/spec1.js
+         # project: ./some/nested/folder
+
+        with:
+          record: true
+        env:
+          # pass the Dashboard record key as an environment variable
+          CYPRESS_RECORD_KEY: ${{ '1a4270d5-bcda-42e9-a400-fd283e15a3da' }}
+          # pass GitHub token to allow accurately detecting a build vs a re-run build
+          GITHUB_TOKEN: ${{ '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' }}

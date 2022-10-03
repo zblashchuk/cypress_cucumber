@@ -1,0 +1,13 @@
+{
+  "login_data": {
+      "email": "zblashchuk@gmail.com",
+      "password": "Qwerty123456*",
+      "invalidEmail": "zblashchukzzz@gmail.com",
+      "wrongEmailFormat": "z"
+  },
+  "form": {
+    "firstName": "Yana",
+    "lastName": "Yanosh",
+    "companyName": "YY company"
+  }
+}
