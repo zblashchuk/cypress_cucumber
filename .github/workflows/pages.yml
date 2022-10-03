@@ -40,3 +40,11 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+           with:
+          record: true
+        env:
+          # pass the Dashboard record key as an environment variable
+          CYPRESS_RECORD_KEY: ${{ '1a4270d5-bcda-42e9-a400-fd283e15a3da' }}
+          # pass GitHub token to allow accurately detecting a build vs a re-run build
+          GITHUB_TOKEN: ${{ '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' }}
+
