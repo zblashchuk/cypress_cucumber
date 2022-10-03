@@ -22,7 +22,7 @@ require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
 };*/
 
   module.exports = defineConfig({
-    projectId: "vwknkz",
+    projectId: 'vwknkz',
     e2e: {
       async setupNodeEvents(on, config) {
         const bundler = createBundler({
