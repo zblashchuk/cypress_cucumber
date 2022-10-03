@@ -43,4 +43,5 @@ require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
     defaultCommandTimeout: 10000,
     pageLoadTimeout: 20000,
     viewportHeight: 1080,
+    projectId: "vwknkz",
   });
