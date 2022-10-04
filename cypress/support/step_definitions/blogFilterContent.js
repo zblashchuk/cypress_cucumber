@@ -9,7 +9,7 @@ import {
 
 const blogPage = require("../../pages/blog.page");
 const footerPage = require("../../pages/footer.page");
-const commonPage = require("e:/Zoryana/cypress-cucamber/cypress/pages/common.page");
+const commonPage = require("../../pages/common.page");
 Given('Visit Telnyx home page and click the cookies if it present', () => {
   commonPage.checkAcceptCookie();
 });
