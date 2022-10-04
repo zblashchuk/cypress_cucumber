@@ -8,7 +8,7 @@ import {
 
 const headerPage = require("../../pages/header.page");
 const loginPage = require("../../pages/login.page");
-const commonPage = require("e:/Zoryana/cypress-cucamber/cypress/pages/common.page");
+const commonPage = require("../../pages/common.page");
 Given('I am on the Telnyx home page and click the cookies if it present', () => {
   //cy.viewport(1920, 1080);
   commonPage.checkAcceptCookie();
