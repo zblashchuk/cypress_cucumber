@@ -8,8 +8,8 @@ import {
 
 const blogPage = require("../../pages/blog.page");
 const waitListPage = require("../../pages/joinToWaistList.page");
-const commonPage = require("e:/Zoryana/cypress-cucamber/cypress/pages/common.page");
-const getTheBookPage = require("e:/Zoryana/cypress-cucamber/cypress/pages/getTheEBook.page");
+const commonPage = require("../../pages/common.page");
+const getTheBookPage = require("../../pages/getTheEBook.page");
 Given('click the cookies if it present on Waist List page', () => {
   waitListPage.checkAcceptCookieWaistlist();
 });
