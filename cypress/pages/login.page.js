@@ -20,7 +20,7 @@ class LoginPage {
   });
   }
   checkUserLogInAccount = () => {
-    cy.get('.fmDnDf > .svg-inline--fa')
+    cy.get('react-account-dropdown [class="Flex__FlexComponent-fGtahC jTwBWc tx-2aP2j0"]')
     .click()
     cy.fixture('loginUser').then((userData)=>{
       cy.get(':nth-child(1) > .text-truncate')
