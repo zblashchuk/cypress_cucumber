@@ -8,8 +8,8 @@ import {
 
 const blogPage = require("../../pages/blog.page");
 const footerPage = require("../../pages/footer.page");
-const commonPage = require("e:/Zoryana/cypress-cucamber/cypress/pages/common.page");
-const getTheBookPage = require("e:/Zoryana/cypress-cucamber/cypress/pages/getTheEBook.page");
+const commonPage = require("../../pages/common.page");
+const getTheBookPage = require("../../pages/getTheEBook.page");
 Given('click the cookies if it present on Telnyx home page', () => {
   commonPage.checkAcceptCookie();
 });
