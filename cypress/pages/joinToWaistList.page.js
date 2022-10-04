@@ -13,7 +13,7 @@ class WaitListPage {
 
  fillFieldsExpertPage = () => {
   cy.fixture('loginUser').then((userData)=>{
-    cy.get('div > #FirstName')
+    cy.get('#FirstName')
     .type(userData.form.firstName)
         
     cy.get('#LastName')
