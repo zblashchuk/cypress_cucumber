@@ -37,13 +37,12 @@ Download or clone project from repository
 
 Open the project folder in VSCode or another IDE
 
-The test scripts are located at: cypress\e2e\telnyx\features\TC-0*/*.cy.js
+The test scripts are located at: cypress\e2e\telnyx\features\
 
-The page objects are in: cypress\e2e\telnyx\pages/*.page.js
 
 Run
 Launch Cypress with the following commands in the terminal:
 ./node_modules/.bin/cypress open or npx cypress open
 
 After a while, the cypress will open.
-In the window that opens, click on any of the tests: *.cy.js
+In the window that opens, click on any of the tests
